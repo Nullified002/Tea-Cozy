@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  text-align: center;
+}
+
+header {
+  height: 69px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  opacity: .9;
+  position: relative;
+}
+
+
+
+.logo {
+  height: 50px;
+  width: auto;
+  justify-content: flex-end;
+}
+
+.links {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+
+.links a{
+  display: inline-flex;
+  justify-content: flex-end;
+  color:seashell;
+  text-decoration: underline;
+  
+}
+
+
+
+.stacker { /* put items you will be using inside the same container */
+  position: relative; /* This makes the container available to be referred to */
+  text-align: center; 
+}
+
+.stuff {
+  width: 1200px;
+  height: 700px;
+}
+
+.desc {
+  width: 100%;
+  opacity: .9;
+  background-color: black;
+  color: seashell;
+  position: absolute; /* This puts your element in the same position as the above element*/
+  top: 50%;
+  left: 50%;/* These 2 put your controlled element in the middle of the referenced element*/
+  transform: translate(-50%, -50%); /* Your element's dimensions will offset the placement a bit. 
+  Nullify that using transform */
+}
+/* TEA OF THE MONTH */
+body {
+  justify-content: center;
+}
+
+.totm {
+  text-align: center;
+}
+
+.totmimgs {
+  border: 5px solid springgreen;
+  max-width: 1000px;
+  max-height: fit-content;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap
+  
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+/*
+.img1 {
+  width: 300px;
+  height: auto;
+  flex-basis: 33.333% auto;
+  display: block;
+}
+
+.img2 {
+  width: 300px;
+  height: auto;
+  
+  display: block;
+}
+
+.img3 {
+  width: 300px;
+  height: auto;
+  
+  display: block;
+}
+
+.img4 {
+  width: 300px;
+  height: auto;
+  
+  display: block;
+}
+
+.img5 {
+  width: 300px;
+  height: auto;
+  
+  display: block;
+}
+*/
