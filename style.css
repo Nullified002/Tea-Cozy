@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 1500px;
 }
 
 html {
@@ -12,12 +15,11 @@ html {
 
 header {
   height: 69px;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   text-align: center;
   opacity: .9;
-  position: relative;
 }
 
 
@@ -31,6 +33,7 @@ header {
 .links {
   display: inline-flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 
@@ -46,12 +49,14 @@ header {
 
 .stacker { /* put items you will be using inside the same container */
   position: relative; /* This makes the container available to be referred to */
-  text-align: center; 
+  text-align: center;
+  border: 3px solid springgreen;
 }
 
 .stuff {
   width: 1200px;
   height: 700px;
+  margin-bottom: 69px;
 }
 
 .desc {
@@ -66,63 +71,52 @@ header {
   Nullify that using transform */
 }
 /* TEA OF THE MONTH */
-body {
-  justify-content: center;
-}
 
 .totm {
   text-align: center;
 }
 
 .totmimgs {
-  border: 5px solid springgreen;
   max-width: 1000px;
-  max-height: fit-content;
   display: flex;
   width: 90%;
   margin: 0 auto;
-  flex-wrap: wrap
-  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.imgs {
+  width: 300px;
+  height: 200px;
+  padding-bottom: 10px;
+}
+
+.totmimgs h4 {
+  padding-bottom: 10px;
+}
+
+.stacker2 {
+  display:flex;
+  border: 2px solid springgreen;
+  max-height: 600px;
+  height: 600px;
+  justify-content: center;
+  background-image: url("images/black-teacup.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 img {
-  width: 300px;
-  height: 200px;
+  z-index: 0;
+  height: 596px; /*~900 x 600~ dimesions*/ 
+  position: relative;
+}
+.stacker2 h2 {
+  position: absolute;
+  position: relative;
 }
 
-/*
-.img1 {
-  width: 300px;
-  height: auto;
-  flex-basis: 33.333% auto;
-  display: block;
-}
+.stacker2 div {
 
-.img2 {
-  width: 300px;
-  height: auto;
-  
-  display: block;
-}
 
-.img3 {
-  width: 300px;
-  height: auto;
-  
-  display: block;
 }
-
-.img4 {
-  width: 300px;
-  height: auto;
-  
-  display: block;
-}
-
-.img5 {
-  width: 300px;
-  height: auto;
-  
-  display: block;
-}
-*/
